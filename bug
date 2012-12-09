@@ -1,0 +1,348 @@
+head=9, tail=9, todo=0
+现在时间是23:11:59
+现在时间是23:12:00
+happened! 23:12:00，K213的22号事件发生！
+head=1, tail=0, todo=0 
+happened! 23:12:00，K471的21号事件发生！
+head=2, tail=0, todo=-1 
+happened! 23:12:00，K471的24号事件发生！
+head=3, tail=0, todo=-2 
+happened! 23:12:00，K213的23号事件发生！
+head=4, tail=0, todo=-3 
+happened! 23:12:00，K471的25号事件发生！
+head=5, tail=0, todo=-4 
+happened! 23:12:00，K471的22号事件发生！
+head=6, tail=0, todo=-5 
+happened! 23:12:00，K213的27号事件发生！
+head=7, tail=0, todo=-6 
+happened! 23:12:00，K471的23号事件发生！
+head=8, tail=0, todo=-7 
+happened! 23:12:00，K471的27号事件发生！
+head=9, tail=0, todo=-8 
+happened! 23:12:00，Z3的31号事件发生！
+head=10, tail=0, todo=-9 
+happened! 23:12:00，K118的0号事件发生！
+head=11, tail=0, todo=-10 
+happened! 23:12:00，E1389的0号事件发生！
+head=12, tail=0, todo=-11 
+happened! 23:12:00，E1389的0号事件发生！
+head=13, tail=0, todo=-12 
+happened! 23:12:00，E1389的0号事件发生！
+head=14, tail=0, todo=-13 
+happened! 23:12:00，E1389的0号事件发生！
+head=15, tail=0, todo=-14 
+happened! 23:12:00，E1389的0号事件发生！
+head=16, tail=0, todo=-15 
+happened! 23:12:00，E1389的0号事件发生！
+head=17, tail=0, todo=-16 
+happened! 23:12:00，E1389的0号事件发生！
+head=18, tail=0, todo=-17 
+happened! 23:12:00，E1389的0号事件发生！
+head=19, tail=0, todo=-18 
+happened! 23:12:00，E1389的0号事件发生！
+head=20, tail=0, todo=-19 
+happened! 23:12:00，E1389的0号事件发生！
+head=21, tail=0, todo=-20 
+happened! 23:12:00，E1389的0号事件发生！
+head=22, tail=0, todo=-21 
+happened! 23:12:00，E1389的0号事件发生！
+head=23, tail=0, todo=-22 
+happened! 23:12:00，E1389的0号事件发生！
+head=24, tail=0, todo=-23 
+happened! 23:12:00，E1389的0号事件发生！
+head=25, tail=0, todo=-24 
+happened! 23:12:00，E1389的0号事件发生！
+head=26, tail=0, todo=-25 
+happened! 23:12:00，E1389的0号事件发生！
+head=27, tail=0, todo=-26 
+happened! 23:12:00，E1389的0号事件发生！
+head=28, tail=0, todo=-27 
+happened! 23:12:00，E1389的0号事件发生！
+head=29, tail=0, todo=-28 
+happened! 23:12:00，E1389的0号事件发生！
+head=30, tail=0, todo=-29 
+happened! 23:12:00，E1389的0号事件发生！
+head=31, tail=0, todo=-30 
+happened! 23:12:00，E1389的0号事件发生！
+head=32, tail=0, todo=-31 
+happened! 23:12:00，E1389的0号事件发生！
+head=33, tail=0, todo=-32 
+happened! 23:12:00，E1389的0号事件发生！
+head=34, tail=0, todo=-33 
+happened! 23:12:00，E1389的0号事件发生！
+head=35, tail=0, todo=-34 
+happened! 23:12:00，E1389的0号事件发生！
+head=36, tail=0, todo=-35 
+happened! 23:12:00，E1389的0号事件发生！
+head=37, tail=0, todo=-36 
+happened! 23:12:00，E1389的0号事件发生！
+head=38, tail=0, todo=-37 
+happened! 23:12:00，E1389的0号事件发生！
+head=39, tail=0, todo=-38 
+happened! 23:12:00，E1389的0号事件发生！
+head=40, tail=0, todo=-39 
+happened! 23:12:00，E1389的0号事件发生！
+head=41, tail=0, todo=-40 
+happened! 23:12:00，E1389的0号事件发生！
+head=42, tail=0, todo=-41 
+happened! 23:12:00，E1389的0号事件发生！
+head=43, tail=0, todo=-42 
+happened! 23:12:00，E1389的0号事件发生！
+head=44, tail=0, todo=-43 
+happened! 23:12:00，E1389的0号事件发生！
+head=45, tail=0, todo=-44 
+happened! 23:12:00，E1389的0号事件发生！
+head=46, tail=0, todo=-45 
+happened! 23:12:00，E1389的0号事件发生！
+head=47, tail=0, todo=-46 
+happened! 23:12:00，E1389的0号事件发生！
+head=48, tail=0, todo=-47 
+happened! 23:12:00，E1389的0号事件发生！
+head=49, tail=0, todo=-48 
+happened! 23:12:00，E1389的0号事件发生！
+head=50, tail=0, todo=-49 
+happened! 23:12:00，E1389的0号事件发生！
+head=51, tail=0, todo=-50 
+happened! 23:12:00，E1389的0号事件发生！
+head=52, tail=0, todo=-51 
+happened! 23:12:00，E1389的0号事件发生！
+head=53, tail=0, todo=-52 
+happened! 23:12:00，E1389的0号事件发生！
+head=54, tail=0, todo=-53 
+happened! 23:12:00，E1389的0号事件发生！
+head=55, tail=0, todo=-54 
+happened! 23:12:00，E1389的0号事件发生！
+head=56, tail=0, todo=-55 
+happened! 23:12:00，E1389的0号事件发生！
+head=57, tail=0, todo=-56 
+happened! 23:12:00，E1389的0号事件发生！
+head=58, tail=0, todo=-57 
+happened! 23:12:00，E1389的0号事件发生！
+head=59, tail=0, todo=-58 
+happened! 23:12:00，E1389的0号事件发生！
+head=60, tail=0, todo=-59 
+happened! 23:12:00，E1389的0号事件发生！
+head=61, tail=0, todo=-60 
+happened! 23:12:00，E1389的0号事件发生！
+head=62, tail=0, todo=-61 
+happened! 23:12:00，E1389的0号事件发生！
+head=63, tail=0, todo=-62 
+happened! 23:12:00，E1389的0号事件发生！
+head=64, tail=0, todo=-63 
+happened! 23:12:00，E1389的0号事件发生！
+head=65, tail=0, todo=-64 
+happened! 23:12:00，E1389的0号事件发生！
+head=66, tail=0, todo=-65 
+happened! 23:12:00，E1389的0号事件发生！
+head=67, tail=0, todo=-66 
+happened! 23:12:00，E1389的0号事件发生！
+head=68, tail=0, todo=-67 
+happened! 23:12:00，E1389的0号事件发生！
+head=69, tail=0, todo=-68 
+happened! 23:12:00，E1389的0号事件发生！
+head=70, tail=0, todo=-69 
+happened! 23:12:00，E1389的0号事件发生！
+head=71, tail=0, todo=-70 
+happened! 23:12:00，E1389的0号事件发生！
+head=72, tail=0, todo=-71 
+happened! 23:12:00，E1389的0号事件发生！
+head=73, tail=0, todo=-72 
+happened! 23:12:00，E1389的0号事件发生！
+head=74, tail=0, todo=-73 
+happened! 23:12:00，E1389的0号事件发生！
+head=75, tail=0, todo=-74 
+happened! 23:12:00，E1389的0号事件发生！
+head=76, tail=0, todo=-75 
+happened! 23:12:00，E1389的0号事件发生！
+head=77, tail=0, todo=-76 
+happened! 23:12:00，E1389的0号事件发生！
+head=78, tail=0, todo=-77 
+happened! 23:12:00，E1389的0号事件发生！
+head=79, tail=0, todo=-78 
+happened! 23:12:00，E1389的0号事件发生！
+head=80, tail=0, todo=-79 
+happened! 23:12:00，E1389的0号事件发生！
+head=81, tail=0, todo=-80 
+happened! 23:12:00，E1389的0号事件发生！
+head=82, tail=0, todo=-81 
+happened! 23:12:00，E1389的0号事件发生！
+head=83, tail=0, todo=-82 
+happened! 23:12:00，E1389的0号事件发生！
+head=84, tail=0, todo=-83 
+happened! 23:12:00，E1389的0号事件发生！
+head=85, tail=0, todo=-84 
+happened! 23:12:00，E1389的0号事件发生！
+head=86, tail=0, todo=-85 
+happened! 23:12:00，E1389的0号事件发生！
+head=87, tail=0, todo=-86 
+happened! 23:12:00，E1389的0号事件发生！
+head=88, tail=0, todo=-87 
+happened! 23:12:00，E1389的0号事件发生！
+head=89, tail=0, todo=-88 
+happened! 23:12:00，E1389的0号事件发生！
+head=90, tail=0, todo=-89 
+happened! 23:12:00，E1389的0号事件发生！
+head=91, tail=0, todo=-90 
+happened! 23:12:00，E1389的0号事件发生！
+head=92, tail=0, todo=-91 
+happened! 23:12:00，E1389的0号事件发生！
+head=93, tail=0, todo=-92 
+happened! 23:12:00，E1389的0号事件发生！
+head=94, tail=0, todo=-93 
+happened! 23:12:00，E1389的0号事件发生！
+head=95, tail=0, todo=-94 
+happened! 23:12:00，E1389的0号事件发生！
+head=96, tail=0, todo=-95 
+happened! 23:12:00，E1389的0号事件发生！
+head=97, tail=0, todo=-96 
+happened! 23:12:00，E1389的0号事件发生！
+head=98, tail=0, todo=-97 
+happened! 23:12:00，E1389的0号事件发生！
+head=99, tail=0, todo=-98 
+happened! 23:12:00，E1389的0号事件发生！
+head=100, tail=0, todo=-99 
+happened! 23:12:00，E1389的0号事件发生！
+head=101, tail=0, todo=-100 
+happened! 23:12:00，E1389的0号事件发生！
+head=102, tail=0, todo=-101 
+happened! 23:12:00，E1389的0号事件发生！
+head=103, tail=0, todo=-102 
+happened! 23:12:00，E1389的0号事件发生！
+head=104, tail=0, todo=-103 
+happened! 23:12:00，E1389的0号事件发生！
+head=105, tail=0, todo=-104 
+happened! 23:12:00，E1389的0号事件发生！
+head=106, tail=0, todo=-105 
+happened! 23:12:00，E1389的0号事件发生！
+head=107, tail=0, todo=-106 
+happened! 23:12:00，E1389的0号事件发生！
+head=108, tail=0, todo=-107 
+happened! 23:12:00，E1389的0号事件发生！
+head=109, tail=0, todo=-108 
+happened! 23:12:00，E1389的0号事件发生！
+head=110, tail=0, todo=-109 
+happened! 23:12:00，E1389的0号事件发生！
+head=111, tail=0, todo=-110 
+happened! 23:12:00，E1389的0号事件发生！
+head=112, tail=0, todo=-111 
+happened! 23:12:00，E1389的0号事件发生！
+head=113, tail=0, todo=-112 
+happened! 23:12:00，E1389的0号事件发生！
+head=114, tail=0, todo=-113 
+happened! 23:12:00，E1389的0号事件发生！
+head=115, tail=0, todo=-114 
+happened! 23:12:00，E1389的0号事件发生！
+head=116, tail=0, todo=-115 
+happened! 23:12:00，E1389的0号事件发生！
+head=117, tail=0, todo=-116 
+happened! 23:12:00，E1389的0号事件发生！
+head=118, tail=0, todo=-117 
+happened! 23:12:00，E1389的0号事件发生！
+head=119, tail=0, todo=-118 
+happened! 23:12:00，E1389的0号事件发生！
+head=120, tail=0, todo=-119 
+happened! 23:12:00，E1389的0号事件发生！
+head=121, tail=0, todo=-120 
+happened! 23:12:00，E1389的0号事件发生！
+head=122, tail=0, todo=-121 
+happened! 23:12:00，E1389的0号事件发生！
+head=123, tail=0, todo=-122 
+happened! 23:12:00，E1389的0号事件发生！
+head=124, tail=0, todo=-123 
+happened! 23:12:00，E1389的0号事件发生！
+head=125, tail=0, todo=-124 
+happened! 23:12:00，E1389的0号事件发生！
+head=126, tail=0, todo=-125 
+happened! 23:12:00，E1389的0号事件发生！
+head=127, tail=0, todo=-126 
+happened! 23:12:00，E1389的0号事件发生！
+head=128, tail=0, todo=-127 
+happened! 23:12:00，E1389的0号事件发生！
+head=129, tail=0, todo=-128 
+happened! 23:12:00，E1389的0号事件发生！
+head=130, tail=0, todo=-129 
+happened! 23:12:00，E1389的0号事件发生！
+head=131, tail=0, todo=-130 
+happened! 23:12:00，E1389的0号事件发生！
+head=132, tail=0, todo=-131 
+happened! 23:12:00，E1389的0号事件发生！
+head=133, tail=0, todo=-132 
+happened! 23:12:00，E1389的0号事件发生！
+head=134, tail=0, todo=-133 
+happened! 23:12:00，E1389的0号事件发生！
+head=135, tail=0, todo=-134 
+happened! 23:12:00，E1389的0号事件发生！
+head=136, tail=0, todo=-135 
+happened! 23:12:00，E1389的0号事件发生！
+head=137, tail=0, todo=-136 
+happened! 23:12:00，E1389的0号事件发生！
+head=138, tail=0, todo=-137 
+happened! 23:12:00，E1389的0号事件发生！
+head=139, tail=0, todo=-138 
+happened! 23:12:00，E1389的0号事件发生！
+head=140, tail=0, todo=-139 
+happened! 23:12:00，E1389的0号事件发生！
+head=141, tail=0, todo=-140 
+happened! 23:12:00，E1389的0号事件发生！
+head=142, tail=0, todo=-141 
+happened! 23:12:00，E1389的0号事件发生！
+head=143, tail=0, todo=-142 
+happened! 23:12:00，E1389的0号事件发生！
+head=144, tail=0, todo=-143 
+happened! 23:12:00，E1389的0号事件发生！
+head=145, tail=0, todo=-144 
+happened! 23:12:00，E1389的0号事件发生！
+head=146, tail=0, todo=-145 
+happened! 23:12:00，E1389的0号事件发生！
+head=147, tail=0, todo=-146 
+happened! 23:12:00，E1389的0号事件发生！
+head=148, tail=0, todo=-147 
+happened! 23:12:00，E1389的0号事件发生！
+head=149, tail=0, todo=-148 
+happened! 23:12:00，E1389的0号事件发生！
+head=150, tail=0, todo=-149 
+happened! 23:12:00，E1389的0号事件发生！
+head=151, tail=0, todo=-150 
+happened! 23:12:00，E1389的0号事件发生！
+head=152, tail=0, todo=-151 
+happened! 23:12:00，E1389的0号事件发生！
+head=153, tail=0, todo=-152 
+happened! 23:12:00，E1389的0号事件发生！
+head=154, tail=0, todo=-153 
+happened! 23:12:00，E1389的0号事件发生！
+head=155, tail=0, todo=-154 
+happened! 23:12:00，E1389的0号事件发生！
+head=156, tail=0, todo=-155 
+happened! 23:12:00，E1389的0号事件发生！
+head=157, tail=0, todo=-156 
+happened! 23:12:00，E1389的0号事件发生！
+head=158, tail=0, todo=-157 
+happened! 23:12:00，E1389的0号事件发生！
+head=159, tail=0, todo=-158 
+happened! 23:12:00，E1389的0号事件发生！
+head=160, tail=0, todo=-159 
+happened! 23:12:00，E1389的0号事件发生！
+head=161, tail=0, todo=-160 
+happened! 23:12:00，E1389的0号事件发生！
+head=162, tail=0, todo=-161 
+happened! 23:12:00，E1389的0号事件发生！
+head=163, tail=0, todo=-162 
+happened! 23:12:00，E1389的0号事件发生！
+head=164, tail=0, todo=-163 
+happened! 23:12:00，E1389的0号事件发生！
+head=165, tail=0, todo=-164 
+happened! 23:12:00，E1389的0号事件发生！
+head=166, tail=0, todo=-165 
+happened! 23:12:00，E1389的0号事件发生！
+head=167, tail=0, todo=-166 
+happened! 23:12:00，E1389的0号事件发生！
+head=168, tail=0, todo=-167 
+happened! 23:12:00，E1389的0号事件发生！
+head=169, tail=0, todo=-168 
+happened! 23:12:00，E1389的0号事件发生！
+head=170, tail=0, todo=-169 
+happened! 23:12:00，E1389的0号事件发生！
+head=171, tail=0, todo=-170 
+happened! 23:12:00，E1389的0号事件发生！
+head=172, tail=0, todo=-171 
+段错误

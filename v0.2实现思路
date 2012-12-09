@@ -1,0 +1,201 @@
+v0.2实现思路
+
+=================事件代号============================
+
+0：始发车
+	00：车底进站（发车前40分钟）/*暂不实现*/
+	01：开始检票（发车前20分钟）
+		由石家庄开往北京西方向的动车4572次列车，现在开始检票。请到第2候车室检票进站，2站台上车。
+	02：第二次提示开始检票（发车前15分钟）
+		由石家庄开往北京西方向的动车4572次列车，已经请旅客检票进站了。请到第2候车室检票进站，2站台上车。
+	03：第三次提示开始检票（发车前10分钟）
+		由石家庄开往北京西方向的动车4572次列车，已经请旅客检票进站了。请到第2候车室检票进站，2站台上车。
+	04：停止检票（发车前5分钟）
+		工作人员请注意，动车4572次列车，请停止检票。
+	05：即将发车，站台广播（发车前2分钟，一遍）
+		由石家庄开往北京西方向的动车4572次列车，开车时间到了。站台上还没有上车的旅客，请您抓紧时间上车。旅客们，您就要离开石家庄车站了。下次旅行，再见。
+	06：列车开走，股道开放（发车后2分钟）/*暂不实现*/
+
+1：终到车
+	10：提示列车接近（到站前15分钟）
+		由广州开往石家庄的特快90次列车就要到达石家庄车站。列车进1站台1道。工作人员请做好接车准备。
+	11：提示接车（到站前2分钟）
+		接车组同志，接客组同志，请您做好准备。由广州开往石家庄的特快90次列车，进1站台1道。工作人员请注意接车。
+	12：列车到站，站台广播（到站时，一遍）
+		各位旅客，您好。石家庄车站到了。您乘坐的特快90次列车，现在到达石家庄车站。在石家庄车站下车的旅客，请您不要慌忙。整理好随身携带的行李物品，不要遗忘在列车上。已经下车的旅客，请您走出站口地下通道出站。
+	13：列车回库，股道开放（到站后30分钟）/*暂不实现*/
+
+2：经停车
+	20：提示列车接近（到站前15分钟）
+		由西安开往北京西的特快44次列车就要到达石家庄车站。列车进2站台2道。工作人员请做好接车准备。
+	21：开始检票（开车前13分钟）
+		由西安开往北京西的特快44次列车，现在开始检票。请到第3候车室检票进站，2站台上车。
+	22：第二次提示开始检票（开车前10分钟）
+		由西安开往北京西的特快44次列车，已经请旅客检票进站了。请到第3候车室检票进站，2站台上车。
+	23：停止检票（开车前5分钟）
+		工作人员请注意，特快44次列车，请停止检票。
+	24：提示接车（到站前2分钟）
+		接车组同志，接客组同志，请您做好准备。由西安开往北京西的特快44次列车，进2站台2道。工作人员请注意接车。
+	25：列车进站中，站台广播（到站前1分钟，一遍）
+		开往北京西方向的特快44次列车就要进站了。站台上等车的旅客，请您站在白色安全线后面来，以免发生危险。站台西侧正在进站的是开往北京西方向的特快44次列车，请您注意不要上错车。
+	26：列车到站，站台广播（到站时，一遍）
+		各位旅客，您好。石家庄车站到了。您乘坐的特快44次列车，现在到达石家庄车站。在石家庄车站下车的旅客，请您不要慌忙。整理好随身携带的行李物品，不要遗忘在列车上。已经下车的旅客，请您走出站口地下通道出站。
+	27：即将发车，站台广播（开车前2分钟，一遍）
+		开往北京西方向的特快44次列车，开车时间到了。站台上还没有上车的旅客，请您抓紧时间上车。旅客们，您就要离开石家庄车站了。下次旅行，再见。
+	28：列车开走，股道开放（开车后2分钟）/*暂不实现*/
+
+3：通过车
+	30：列车准备通过，股道封闭（通过前1分钟）/*暂不实现*/
+	31：广播通过（通过时）
+		工作人员请注意，由西安开往北京西方向的直达特快20次列车，4道现在通过。请工作人员注意安全，做好防护。
+	32：列车开走，股道开放（通过后1分钟） /*暂不实现*/
+
+=======================时间的读取========================
+每次读取时间，要读取当前系统时间的时、分、秒。
+
+何时读取时间：每次事件发生以后。事件发生过程中，不读取系统时间。
+读取时间的频率：在没有事件发生时，1秒钟读取一次系统时间。
+
+计算时间差函数deltatime
+int deltatime(trains* ptrain, int time_seq)
+{
+	int hour, hour_now, min, min_now, deltamin, deltahour, deltatotal;
+	if (time_seq == 1) {
+		hour = ptrain -> time1_hour;
+		min = ptrain -> time1_min;
+	}
+	else if (time_seq == 2) {
+		hour = ptrain -> time2_hour;
+		min = ptrain -> time2_min;
+	}
+	hour_now = tblock -> tm_hour;
+	min_now = tblock -> tm_min;
+
+	deltamin = min - min_now;
+	if(hour == 0 && hour_now == 23)
+		deltahour = hour + 24 - hour_now;
+	else deltahour = hour - hour_now;
+	
+	deltatotal = deltahour * 60 + deltamin;
+	return deltatotal;
+}
+
+=======================事件的发生========================
+每次读取完系统时间以后，扫描所有的事件，将应该发生的事件入队。
+若没有事件，每秒钟读取系统时间一次。
+若事件到达发生时间，甚至已经晚于发生时间，应让其按照队列顺序立即发生。
+事件发生后，将其出队。
+
+=======================有关事件队列======================
+事件队列的结构：
+	typedef struct { 
+		int serial; 
+		int code;
+	} issue;
+	issue issuequeue[10];
+
+	int head, tail; /*事件队列的头指针和尾指针*/
+	int todo; /*待处理事件个数*/
+	head = tail = 0; /*初始化队列为空*/
+	tail++; todo++; /*有事件入队*/
+	head++; todo--; /*有事件出队*/
+	(head == (tail+1)) && (todo == 0); /*队空*/
+	(head == (tail+1)) && (todo == 10); /*队满*/
+	if (tail == 10) tail = 0;
+	if (head == 10) head = 0;
+
+入队函数inqueue：
+int inqueue( int in_serial, int in_code )
+{
+	int queuei;
+	if ((head == (tail+1)) && (todo == 10)) {
+		printf("队列已满！\n");
+		return -1;
+	}
+	for (queuei = tail; queuei < head; queuei++ ) {
+		flag_exist = 0;
+		if (tail == 10) tail = 0;
+		if (head == 10) head = 0;
+		if ((issuequeue[queuei].serial == in_serial) && (issuequeue[queuei].code == in_code)) {
+			flag_exist = 1;
+			return 1; /*队列里已经有这个事件了，不应重复加入*/
+		}
+	}
+	if (flag_exist = 0) {
+		issuequeue[head].serial = in_serial;
+		issuequeue[head].code = in_code;
+		head++; todo++;
+		if (head == 10) head = 0;
+		return 0; /*队列里没有这个事件，入队成功*/
+	}
+}
+
+=======================判断事件是否应该加入队列==========
+在每次读取时间结束后，对traindata[]数组全面扫描。对于每一个车次
+void scan()
+{
+	if (traindata[i].action == 0)  {
+		if ( deltatime( &traindata[i], 1 ) >= -20 ) 
+			queue_stat = inqueue(traindata[i].serial, 1);
+		if ( deltatime( &traindata[i], 1 ) >= -15 ) 
+			queue_stat = inqueue(traindata[i].serial, 2);
+		if ( deltatime( &traindata[i], 1 ) >= -10 ) 
+			queue_stat = inqueue(traindata[i].serial, 3);
+		if ( deltatime( &traindata[i], 1 ) >= -5 ) 
+			queue_stat = inqueue(traindata[i].serial, 4);
+		if ( deltatime( &traindata[i], 1 ) >= -2 ) 
+			queue_stat = inqueue(traindata[i].serial, 5);
+	}
+	if (traindata[i].action == 1) {
+		if ( deltatime( &traindata[i], 1 ) >= -15 ) 
+			queue_stat = inqueue(traindata[i].serial, 10);
+		if ( deltatime( &traindata[i], 1 ) >= -2 ) 
+			queue_stat = inqueue(traindata[i].serial, 11);
+		if ( deltatime( &traindata[i], 1 ) >= 0 ) 
+			queue_stat = inqueue(traindata[i].serial, 12);
+	}
+	if (traindata[i].action == 2) {
+		if ( deltatime( &traindata[i], 1 ) >= -15 ) 
+			queue_stat = inqueue(traindata[i].serial, 20);
+		if ( deltatime( &traindata[i], 2 ) >= -13 ) 
+			queue_stat = inqueue(traindata[i].serial, 21);
+		if ( deltatime( &traindata[i], 2 ) >= -10 )
+			queue_stat = inqueue(traindata[i].serial, 22);
+		if ( deltatime( &traindata[i], 2 ) >= -5 ) 
+			queue_stat = inqueue(traindata[i].serial, 23);
+		if ( deltatime( &traindata[i], 1 ) >= -2 ) 
+			queue_stat = inqueue(traindata[i].serial, 24);
+		if ( deltatime( &traindata[i], 1 ) >= -1 ) 
+			queue_stat = inqueue(traindata[i].serial, 25);
+		if ( deltatime( &traindata[i], 1 ) >= 0 ) 
+			queue_stat = inqueue(traindata[i].serial, 26);
+		if ( deltatime( &traindata[i], 2 ) >= -2 )
+			queue_stat = inqueue(traindata[i].serial, 27);
+	}
+	if (traindata[i].action == 3) 
+		if ( deltatime( &traindata[i], 1 ) >= 0 )
+			queue_stat = inqueue(traindata[i].serial, 31);
+
+	if(queue_stat == 0)   printf("入队成功\n");
+	else  { printf("入队失败了！\n"); exit(0); }
+}
+========================事件的发生===========================
+判断队空函数isqueueempty
+int isqueueempty()
+{
+	if ((head == (tail+1)) && todo == 0) return 0; /*队空*/
+	else return 1; /*队非空*/
+}
+
+事件发生函数occur
+int occur()
+{
+	int times = 0;
+	while (isqueueempty() == 1) {
+		printf("%d:%d:%d，%c%d的%d号事件发生！\n", tblock -> tm_hour, tblock -> tm_min, tblock -> tm_sec, traindata[issuequeue[head].serial].class, traindata[issuequeue[head].serial].train_no, issuequeue[head].code);
+		head++; todo--;
+		if(head == 10)  head = 0;
+		times++;
+	}
+	return times;
+}

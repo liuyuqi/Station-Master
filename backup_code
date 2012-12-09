@@ -1,0 +1,18 @@
+           switch (traindata[serial].class)  {
+                case 'E': printf("普快");break;
+                case 'L': printf("临客");break;
+                case 'K': printf("快速");break;
+                case 'T': printf("特快");break;
+                case 'Z': printf("直达特快");break;
+                case 'D': printf("动车");break;
+                case 'C': printf("城际动车");break;
+                case 'G': printf("高速动车");break;
+                case 'X': printf("行包");break;
+                default: printf("Syntax Error! Program will now exit!\n");return (-1);
+            }   
+
+
+
+
+
+
